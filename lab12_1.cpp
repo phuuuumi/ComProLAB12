@@ -2,7 +2,7 @@
 #include<ctime>
 using namespace std;
 
-int fibonacci(int x);
+long long fibonacci(int x);
 
 int main(){
     clock_t start = clock();
@@ -13,7 +13,7 @@ int main(){
     return 0;
 }
 
-int fibonacci(int x){
+long long fibonacci(int x){
     if(x==0) return 0;
     if(x==1) return 1;
     return fibonacci(x-1) + fibonacci(x-2);
